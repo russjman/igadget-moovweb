@@ -1,0 +1,35 @@
+body._category{
+	.Left{
+		#SideCategoryShopByPrice,.BrandList{
+			border:1px solid $color2;
+			border-radius: 5px;
+
+			.BlockContent{
+				& > ul {
+
+				}
+			}
+			.mw_arrow {
+  				@include sprites-menu_go;
+  				float: right;
+			}
+			h2{
+    			@include background(linear-gradient(top, #852201, #6a1b00));
+    			.mw_indicator{
+    				float: right;
+    			}
+				&[data-ur-state="disabled"] {
+  					> .mw_indicator {
+    					@extend .sprites-plus;
+  					}
+				}
+				&[data-ur-state="enabled"] {
+  					> .mw_indicator {
+    					@extend .sprites-minus;
+  					}
+				}
+			
+			}
+		}
+	}
+}
