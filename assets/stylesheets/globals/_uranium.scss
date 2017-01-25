@@ -37,6 +37,7 @@
   @include hero-load-helper();
   overflow-x: hidden;
   width: 100%;
+  position:relative;
 }
 [data-ur-carousel-component="scroll_container"] {
   clear: both;
@@ -70,6 +71,22 @@
   &[data-ur-state="inactive"] {
     opacity: 0.3;
   }
+}
+[data-ur-carousel-button-type="prev"] {
+  @extend .sprites-btn_back;
+  top:45%;
+  left:0;
+}
+[data-ur-carousel-button-type="next"] {
+  @extend .sprites-menu_go;
+  top:45%;
+  right:0;
+}
+
+[data-ur-carousel-component="button"] {
+  display:block;
+  position:absolute;
+  padding:$spacing-mini;
 }
 
 // Zoom

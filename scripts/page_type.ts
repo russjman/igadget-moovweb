@@ -16,6 +16,9 @@ match_not($path, /\.css|\.gif|\.jpg|\.jpeg/) {
     with(/shop/) {
     	$page_type = "category"
     }
+    with(/product/) {
+      $page_type = "product"
+    }
   }
 }
 

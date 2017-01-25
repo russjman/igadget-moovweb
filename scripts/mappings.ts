@@ -17,6 +17,10 @@ match($status) {
     	log('importing categories script')
     	@import pages/category.ts
     }
+    with(/^product$/) {
+      log("importing products script")
+      @import pages/product.ts
+    }
     else() {
     }
   }

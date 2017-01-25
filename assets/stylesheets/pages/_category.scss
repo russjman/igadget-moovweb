@@ -1,8 +1,8 @@
 body._category{
 	.Left{
 		#SideCategoryShopByPrice,.BrandList{
-			border:1px solid $color2;
-			border-radius: 5px;
+			border:1px solid $ig-dark-orange;
+			border-radius: $base-border-radius;
 
 			.BlockContent{
 				& > ul {
@@ -14,7 +14,9 @@ body._category{
   				float: right;
 			}
 			h2{
-    			@include background(linear-gradient(top, #852201, #6a1b00));
+    			@include background(linear-gradient(top, $ig-orange, $ig-dark-orange));
+    			color:white;
+    			padding:$spacing-mini;
     			.mw_indicator{
     				float: right;
     			}

@@ -1,26 +1,19 @@
 $("./body") {
-  add_class("mw-home")
-	$$("#HomeFeaturedProducts") {
-	  	$(".//ul") {
-	  		add_class("mw-flex-box")
-	  		$("./li") {
-	  			add_class("mw-flex-box-item-2")
-	  		}
-	  	}
+	add_class("_product")
+	$$("#SideNewProducts"){
+		remove()
 	}
 
-	$$("#HomeNewProducts") {
-	  	$(".//ul") {
-	  		add_class("mw-flex-box")
-	  		$("./li") {
-	  			add_class("mw-flex-box-item-2")
-	  		}
-	  	}
-	}
- 
- 	#convert all right column panels to ur carousels
+	#convert all right column panels to ur carousels
 	$(".//div[contains(@class,'Right')]"){
+		$("./div[contains(@style,'display:none;')]") {
+				log('found hidden div')
+				log(fetch('@id'))
+
+				remove()
+		}
 		$("./div[contains(@class,'Panel')]") {
+
 			attribute("data-ur-set","carousel")
 			attribute("data-ur-fill","4")
 
@@ -35,6 +28,4 @@ $("./body") {
 		}
 		
 	}
-
-
 }

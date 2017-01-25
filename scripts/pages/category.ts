@@ -2,9 +2,7 @@ $("./body") {
 	add_class("_category");
 	
 	$(".//div[contains(@id,'Wrapper')]"){
-		log('found wrapper')
 		$(".//div[contains(@class, 'Left')]") {
-			log('found left')
 			$(".//div[contains(@class, 'NewsletterSubscription')]") {
           		#remove()
         	}
